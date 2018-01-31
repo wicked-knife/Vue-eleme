@@ -53,9 +53,11 @@ export default {
       url: 'https://ghostratel.github.io/portfolio/eleme/data.json',
       method: 'get'
     }).then(response => {
-      this.seller = response.data.seller
-      this.goods = response.data.goods
-      this.ratings = response.data.ratings
+      var data = JSON.parse(JSON.stringify(response.data).replace(/http/g, 'https'))
+      // 将http资源的图片地址替换为https协议
+      this.seller = data.seller
+      this.goods = data.goods
+      this.ratings = data.ratings
     })
     // axios({
     //   url: 'http://localhost:3000/goods',
