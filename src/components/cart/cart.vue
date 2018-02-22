@@ -20,7 +20,7 @@
       <div id="cart_detail" v-show="isShow && cart_list.length > 0">
         <div id="cart_detail_title">
           <span>购物车</span>
-          <span id="empty_cart" @click.stop="empty_cart">清空</span>
+          <span id="empty_cart" @click.stop="confirmShow = true">清空</span>
         </div>
         <div id="cart_detail_list" ref="cart-warpper">
           <ul>
@@ -37,24 +37,32 @@
   </div>
   <div id="detail-mask" v-show="isShow && cart_list.length > 0" @click="hide_mask">
   </div>
+  <confirm v-model="confirmShow" content='确认清空购物车?' @on-confirm="empty_cart"  @on-cancel="confirmShow = false"></confirm>
+  <alert v-model="alertShow" title="支付成功" :content="`已成功支付${total_price}元`"></alert>
   </div>
 </template>
 
 <script>
 import cartControl from '@/components/cartControl/cartControl'
 import BetterScroll from 'better-scroll'
+import { Confirm, Alert } from 'vux'
+
 export default {
   props: {
     foodList: {},
     seller: {}
   },
   components: {
-    cartControl
+    cartControl,
+    Confirm,
+    Alert
   },
   data () {
     return {
       cartScroll: {},
-      isShow: false
+      isShow: false,
+      confirmShow: false,
+      alertShow: false
     }
   },
   computed: {
@@ -127,7 +135,7 @@ export default {
     },
     pay () {
       if (this.total_price > this.seller.minPrice) {
-        alert(`支付${this.total_price}`)
+        this.alertShow = true
       }
     }
   },

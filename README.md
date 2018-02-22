@@ -23,6 +23,7 @@
 * [x] Vue
 * [x] Vue-Router
 * [x] Vue-cli
+* [x] VUX
 * [x] SCSS
 * [x] ESlint
 
