@@ -4,7 +4,7 @@
       <i class="cart_decrease iconfont icon-chiping" @click.stop="decrease(food)" v-show="food.count && food.count !== 0"></i>
     </transition>
     <span class="food_count" v-show="food.count && food.count !== 0">{{food.count}}</span>
-    <i class="cart_add iconfont icon-roundaddfill" @click.stop="add(food)"></i>
+    <i class="cart_add iconfont icon-roundaddfill" @click.stop="add($event,food)"></i>
   </div>
 </template>
 
@@ -19,7 +19,8 @@ export default {
         food.count--
       }
     },
-    add (food) {
+    add (event, food) {
+      // console.log(event.target.getBoundingClientRect())
       if (!food.count) {
         this.$set(food, 'count', 1)
       } else {
@@ -33,9 +34,6 @@ export default {
 <style lang="scss" scoped>
 .show-enter-active,.show-leave-active {
   transition: all .5s;
-}
-.show-enter-to,.show-leave{
-  transform: translateX(0px) rotateZ(0);
 }
 .show-enter,.show-leave-to {
   opacity: 0;
@@ -69,4 +67,5 @@ export default {
     float: right;
   }
 }
+
 </style>
