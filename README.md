@@ -9,7 +9,7 @@
 
 移动端体验更佳     
 
-![二维码](http://i1.bvimg.com/632724/ba78a8a6ce23611e.png)
+![二维码](http://i4.bvimg.com/632724/4a62f41e8cfa4bb8.png)
 
 ### 用户界面
 * 商品列表页
