@@ -9,7 +9,7 @@
 
 移动端体验更佳     
 
-![二维码](http://i4.bvimg.com/632724/4a62f41e8cfa4bb8.png)
+![二维码](https://ws1.sinaimg.cn/large/e3507465gy1fouvf5xvwgj207s07swe9.jpg)
 
 ### 用户界面
 * 商品列表页
@@ -28,7 +28,7 @@
 * [x] ESlint
 
 ### 项目目录
-![](http://i1.bvimg.com/632724/752f022e8e343bce.png)
+![](https://ws1.sinaimg.cn/large/e3507465gy1fouvgqt5inj20ff08nq32.jpg)
 
 ### 开始
 #### 开发环境
