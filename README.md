@@ -5,11 +5,11 @@
 1.需求分析 → 2.设计图分析 → 3.模块化构思 → 4. 项目目录规划 → 5.静态资源准备 → 6.编码   
 
 ## 在线预览
-[项目演示地址](https://ghostratel.github.io/portfolio/eleme/index.html#/goods)      
+[项目演示地址](https://wicked-knife.github.io/portfolio/eleme/index.html#/goods)      
 
 移动端体验更佳     
 
-![二维码](https://ws1.sinaimg.cn/large/e3507465gy1fouvf5xvwgj207s07swe9.jpg)
+![二维码](http://ww1.sinaimg.cn/large/e3507465gy1g6m3v8amlij2074074t8l.jpg)
 
 ### 用户界面
 * 商品列表页
